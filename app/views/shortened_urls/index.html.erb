@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <center>
+            <h1>Enter the Urls</h1>
+            <%= form_with url: "/shortened_urls", method: :post do |f| %>
+                <%= f.text_field :original_url %>
+                <%= f.submit "Shorten" %>
+            <% end %>
+        </center>
+    </body>
+</html>
